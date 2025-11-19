@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suppression de Données - BonDog</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #8FB89C;
+            border-bottom: 3px solid #8FB89C;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #555;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #666;
+            margin-top: 20px;
+        }
+        p, li {
+            margin-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .info-box {
+            background: #e7f3ff;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #8FB89C;
+            margin: 20px 0;
+        }
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .section {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Suppression de Données</h1>
+        <p><strong>Application :</strong> BonDog</p>
+        <p><strong>Dernière mise à jour :</strong> <span id="date"></span></p>
+
+        <div class="info-box">
+            <p><strong>ℹ️ Information importante :</strong> Vous pouvez supprimer certaines de vos données directement depuis l'application BonDog, sans avoir à supprimer votre compte complet.</p>
+        </div>
+
+        <h2>Données que vous pouvez supprimer depuis l'application</h2>
+
+        <div class="section">
+            <h3>🐕 Profils de chiens</h3>
+            <p><strong>Comment supprimer :</strong></p>
+            <ol>
+                <li>Ouvrez l'application BonDog</li>
+                <li>Allez dans l'onglet <strong>"Profil"</strong></li>
+                <li>Cliquez sur <strong>"Gérer mes chiens"</strong></li>
+                <li>Sélectionnez le chien que vous souhaitez supprimer</li>
+                <li>Cliquez sur l'icône <strong>🗑️</strong> (corbeille)</li>
+                <li>Confirmez la suppression</li>
+            </ol>
+            <p><strong>Données supprimées :</strong> Le profil du chien, ses informations (nom, race, âge), ses photos, ses données de progression, son planning, et toutes les données associées.</p>
+        </div>
+
+        <div class="section">
+            <h3>📸 Photos et vidéos</h3>
+            <p><strong>Comment supprimer :</strong></p>
+            <ol>
+                <li>Ouvrez l'application BonDog</li>
+                <li>Allez dans l'onglet <strong>"Profil"</strong> ou <strong>"Amis"</strong></li>
+                <li>Accédez à votre album photo ou à la photo/vidéo que vous souhaitez supprimer</li>
+                <li>Cliquez sur l'icône de suppression (🗑️) ou maintenez appuyé sur la photo</li>
+                <li>Confirmez la suppression</li>
+            </ol>
+            <p><strong>Données supprimées :</strong> La photo ou vidéo sera définitivement supprimée de votre compte et ne sera plus visible par vos amis.</p>
+        </div>
+
+        <div class="section">
+            <h3>📅 Rendez-vous vétérinaires</h3>
+            <p><strong>Comment supprimer :</strong></p>
+            <ol>
+                <li>Ouvrez l'application BonDog</li>
+                <li>Allez dans l'onglet <strong>"Profil"</strong></li>
+                <li>Accédez au <strong>"Carnet de santé"</strong> de votre chien</li>
+                <li>Sélectionnez le rendez-vous que vous souhaitez supprimer</li>
+                <li>Cliquez sur l'icône de suppression (🗑️)</li>
+                <li>Confirmez la suppression</li>
+            </ol>
+            <p><strong>Données supprimées :</strong> Le rendez-vous et toutes les informations associées (date, notes, etc.).</p>
+        </div>
+
+        <div class="section">
+            <h3>📝 Notes</h3>
+            <p><strong>Comment supprimer :</strong></p>
+            <ol>
+                <li>Ouvrez l'application BonDog</li>
+                <li>Allez dans l'onglet <strong>"Profil"</strong></li>
+                <li>Accédez au <strong>"Journal"</strong> (Notes)</li>
+                <li>Sélectionnez la note que vous souhaitez supprimer</li>
+                <li>Cliquez sur l'icône de suppression (🗑️)</li>
+                <li>Confirmez la suppression</li>
+            </ol>
+            <p><strong>Données supprimées :</strong> La note et son contenu seront définitivement supprimés.</p>
+        </div>
+
+        <div class="section">
+            <h3>👥 Relations d'amitié</h3>
+            <p><strong>Comment supprimer :</strong></p>
+            <ol>
+                <li>Ouvrez l'application BonDog</li>
+                <li>Allez dans l'onglet <strong>"Amis"</strong></li>
+                <li>Sélectionnez l'ami que vous souhaitez retirer</li>
+                <li>Cliquez sur <strong>"Supprimer l'ami"</strong> ou l'icône de suppression</li>
+                <li>Confirmez la suppression</li>
+            </ol>
+            <p><strong>Données supprimées :</strong> La relation d'amitié sera supprimée. Vous ne pourrez plus voir les photos de cet ami et réciproquement.</p>
+        </div>
+
+        <div class="warning">
+            <p><strong>⚠️ Attention :</strong> La suppression de ces données est <strong>irréversible</strong>. Une fois supprimées, elles ne pourront pas être récupérées.</p>
+        </div>
+
+        <h2>Données qui ne peuvent pas être supprimées individuellement</h2>
+        <p>Certaines données sont liées à votre compte et ne peuvent être supprimées qu'en supprimant votre compte complet :</p>
+        <ul>
+            <li>Votre compte utilisateur (email, nom d'utilisateur)</li>
+            <li>Vos données de connexion</li>
+            <li>Vos préférences d'application</li>
+            <li>Vos paramètres de compte</li>
+        </ul>
+        <p>Pour supprimer ces données, vous devez <a href="suppression-compte.html" style="color: #8FB89C; font-weight: bold;">demander la suppression de votre compte</a>.</p>
+
+        <h2>Durée de conservation</h2>
+        <p>Les données que vous supprimez manuellement sont supprimées <strong>immédiatement</strong> de nos serveurs.</p>
+        <p>Certaines données peuvent être conservées dans les sauvegardes techniques pendant une période maximale de <strong>30 jours</strong> pour des raisons de sécurité et de récupération en cas d'erreur.</p>
+
+        <h2>Besoin d'aide ?</h2>
+        <p>Si vous rencontrez des difficultés pour supprimer vos données ou si vous avez des questions, n'hésitez pas à nous contacter à <a href="mailto:app.bondog@gmail.com" style="color: #8FB89C; font-weight: bold;">app.bondog@gmail.com</a>.</p>
+
+        <hr style="margin: 40px 0; border: none; border-top: 1px solid #ddd;">
+
+        <p style="text-align: center; color: #888; font-size: 14px;">
+            <a href="index.html" style="color: #8FB89C; text-decoration: none;">← Retour à la Politique de Confidentialité</a> | 
+            <a href="suppression-compte.html" style="color: #8FB89C; text-decoration: none;">Suppression de compte complet</a>
+        </p>
+    </div>
+
+    <script>
+        document.getElementById('date').textContent = new Date().toLocaleDateString('fr-FR', { 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric' 
+        });
+    </script>
+</body>
+</html>
+
