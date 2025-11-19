@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suppression de Compte - BonDog</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #8FB89C;
+            border-bottom: 3px solid #8FB89C;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #555;
+            margin-top: 30px;
+        }
+        p, li {
+            margin-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .contact-box {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #8FB89C;
+            margin: 20px 0;
+        }
+        .email-link {
+            color: #8FB89C;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .email-link:hover {
+            text-decoration: underline;
+        }
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .steps {
+            background: #e7f3ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        .step-number {
+            position: absolute;
+            left: 0;
+            background: #8FB89C;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Suppression de Compte</h1>
+        <p><strong>Application :</strong> BonDog</p>
+        <p><strong>Dernière mise à jour :</strong> <span id="date"></span></p>
+
+        <h2>Comment demander la suppression de votre compte</h2>
+        
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <p><strong>Envoyez un email</strong> à notre adresse de contact avec votre demande de suppression de compte.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <p><strong>Indiquez votre email</strong> utilisé pour créer votre compte BonDog.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <p><strong>Confirmez votre demande</strong> en répondant à notre email de confirmation.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <p><strong>Votre compte sera supprimé</strong> dans un délai de 30 jours maximum après confirmation.</p>
+            </div>
+        </div>
+
+        <div class="contact-box">
+            <h3>📧 Contact</h3>
+            <p>Pour demander la suppression de votre compte, envoyez un email à :</p>
+            <p><a href="mailto:app.bondog@gmail.com?subject=Demande de suppression de compte" class="email-link">app.bondog@gmail.com</a></p>
+            <p><strong>Objet :</strong> Demande de suppression de compte</p>
+        </div>
+
+        <h2>Données qui seront supprimées</h2>
+        <p>Lors de la suppression de votre compte, les données suivantes seront définitivement supprimées :</p>
+        <ul>
+            <li>Votre compte utilisateur (email, nom d'utilisateur, mot de passe)</li>
+            <li>Tous vos profils de chiens et leurs informations</li>
+            <li>Vos photos et vidéos de chiens</li>
+            <li>Vos données de progression (exercices, planning, notes)</li>
+            <li>Vos relations d'amitié</li>
+            <li>Vos publications et commentaires</li>
+            <li>Toutes les données associées à votre compte</li>
+        </ul>
+
+        <h2>Données qui peuvent être conservées</h2>
+        <p>Certaines données peuvent être conservées pour des raisons légales ou techniques :</p>
+        <ul>
+            <li><strong>Données de facturation :</strong> Les informations de paiement et d'abonnement peuvent être conservées conformément aux obligations légales (généralement 7 ans en France).</li>
+            <li><strong>Logs techniques :</strong> Les logs de sécurité et d'utilisation peuvent être conservés pendant une période limitée pour des raisons de sécurité.</li>
+        </ul>
+
+        <div class="warning">
+            <p><strong>⚠️ Attention :</strong> La suppression de votre compte est <strong>irréversible</strong>. Toutes vos données seront définitivement perdues et ne pourront pas être récupérées.</p>
+        </div>
+
+        <h2>Délai de traitement</h2>
+        <p>Votre demande de suppression sera traitée dans un délai maximum de <strong>30 jours</strong> après réception de votre confirmation.</p>
+        <p>Vous recevrez un email de confirmation une fois la suppression effectuée.</p>
+
+        <h2>Questions ou assistance</h2>
+        <p>Si vous avez des questions concernant la suppression de votre compte ou si vous rencontrez des difficultés, n'hésitez pas à nous contacter à <a href="mailto:app.bondog@gmail.com" class="email-link">app.bondog@gmail.com</a>.</p>
+
+        <hr style="margin: 40px 0; border: none; border-top: 1px solid #ddd;">
+
+        <p style="text-align: center; color: #888; font-size: 14px;">
+            <a href="index.html" style="color: #8FB89C; text-decoration: none;">← Retour à la Politique de Confidentialité</a>
+        </p>
+    </div>
+
+    <script>
+        document.getElementById('date').textContent = new Date().toLocaleDateString('fr-FR', { 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric' 
+        });
+    </script>
+</body>
+</html>
+
